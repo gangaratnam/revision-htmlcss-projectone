@@ -162,6 +162,8 @@ input:focus {
   body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 0;
   }
   .login-card {
     max-width: 400px;
