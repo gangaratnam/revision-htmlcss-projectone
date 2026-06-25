@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://googleapis.com" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <img src="./assets/Login.gif" alt="" class="logo" />
+
+      <span id="logout" class="material-symbols-outlined"> logout</span>
+    </header>
+    <main class="dashboard">
+      <section class="hero">
+        <h1>Discover Your Career Path 🚀</h1>
+        <p>Select your interest and get a complete roadmap.</p>
+      </section>
+
+      <section class="search-card">
+        <input id="courseSearch" placeholder="Search your interest..." />
+      </section>
+
+      <section class="chips-container">
+        <button id="chip" class="chip">Frontend</button>
+        <button id="chip" class="chip">Backend</button>
+        <button id="chip" class="chip">UI/UX</button>
+        <button id="chip" class="chip">Java</button>
+        <button id="chip" class="chip">Python</button>
+        <button id="chip" class="chip">AI/ML</button>
+      </section>
+
+      <section class="result-card">
+        <h2>Frontend Development</h2>
+
+        <div class="card-section">
+          <h3>Career Path</h3>
+
+          <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+          </ul>
+        </div>
+
+        <!-- <section class="result-card">
+          <h2 id="courseTitle"></h2>
+
+          <div class="card-section">
+            <h3>Career Path</h3>
+            <ul id="careerPath"></ul>
+          </div>
+
+          <div class="card-section">
+            <h3>Free Tutorials</h3>
+            <ul id="tutorials"></ul>
+          </div>
+        </section> -->
+
+        <div class="card-section">
+          <h3>Free Tutorials</h3>
+
+          <ul>
+            <li>FreeCodeCamp</li>
+            <li>SuperSimpleDev</li>
+            <li>Traversy Media</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="./mock-data/main.js"></script>
+  </body>
+</html>
