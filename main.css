@@ -5,12 +5,7 @@
 }
 body {
   font-family: system-ui, sans-serif;
-  background:
-    linear-gradient(
-      135deg,
-      #f5f7fa,
-      #c3cfe2
-    );
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
 
   min-height: 100vh;
 }
@@ -116,4 +111,7 @@ main {
   padding: 2rem;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.logout-icon {
+  cursor: pointer;
 }
