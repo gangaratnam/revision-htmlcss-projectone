@@ -15,8 +15,6 @@ toggle.addEventListener("click", () => {
   }
 });
 
-
-
 const btn = document.getElementById("loginButton");
 const loginForm = document.getElementById("loginForm");
 const userNameInput = document.getElementById("username");
@@ -29,9 +27,14 @@ loginForm.addEventListener("submit", (e) => {
     localStorage.setItem("isAuthenticated", true);
     localStorage.setItem("user", JSON.stringify(mockUser));
     window.location.href = "./Main.html";
+    if (rememberMe.checked) {
+      localStorage.setItem("rememberMe", "true");
+    }
+
+    window.location.href = "./Main.html";
   } else {
     alert("Invalid username or password");
   }
 });
 
-
+const rememberMe = document.getElementById("rememberMe");

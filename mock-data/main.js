@@ -118,3 +118,16 @@ chips.forEach((chip) => {
   });
 });
 renderCourse("frontend");
+
+const courseSearch = document.getElementById("courseSearch");
+courseSearch.addEventListener("input", (e) => {
+  const value = e.target.value.trim().toLowerCase();
+  if (courses[value]) {
+    renderCourse(value);
+  }
+});
+const isAuthenticated = localStorage.getItem("isAuthenticated");
+
+if (isAuthenticated !== "true") {
+  window.location.href = "./Login.html";
+}
