@@ -18,7 +18,7 @@
     <header class="navbar">
       <img src="./assets/Login.gif" alt="" class="logo" />
 
-      <span id="logout" class="material-symbols-outlined logout-icon"> logout</span>
+      <span id="logout" class="material-symbols-outlined"> logout</span>
     </header>
     <main class="dashboard">
       <section class="hero">
@@ -27,7 +27,12 @@
       </section>
 
       <section class="search-card">
-        <input id="courseSearch" placeholder="Search your interest..." />
+        <div class="search-container">
+          <input id="courseSearch" placeholder="Search your interest..." />
+          <span id="searchIcon" class="material-symbols-outlined close">
+            close</span
+          >
+        </div>
       </section>
 
       <section class="chips-container">
@@ -42,6 +47,9 @@
       <section class="result-card">
         <h2 id="courseTitle"></h2>
 
+        <button id="tableBtn" class="table-btn">Table</button>
+        <button id="formBtn" class="form-btn">Fill the form</button>
+
         <div class="card-section">
           <h3>Career Path</h3>
           <ul id="careerPath"></ul>
@@ -52,7 +60,6 @@
           <ul id="tutorials"></ul>
         </div>
       </section>
-
     </main>
 
     <script src="./mock-data/main.js"></script>

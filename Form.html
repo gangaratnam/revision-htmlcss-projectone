@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://googleapis.com" />
+      <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="./form.css"/>
+    <link rel="stylesheet" href="./main.css"/>
+  </head>
+
+  <body>
+     <header class="navbar">
+      <img src="./assets/Login.gif" alt="" class="logo" />
+
+      <span id="logout" class="material-symbols-outlined"> logout</span>
+    </header>
+    <main class="form-page">
+      <div class="form-card">
+        <h1>Register Course 🚀</h1>
+
+        <form>
+          <label>Course Name</label>
+          <input type="text" placeholder="Enter course name" />
+
+          <label>Category</label>
+
+          <select>
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>UI/UX</option>
+          </select>
+
+          <label>Level</label>
+
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="level" />
+              Beginner
+            </label>
+
+            <label>
+              <input type="radio" name="level" />
+              Intermediate
+            </label>
+
+            <label>
+              <input type="radio" name="level" />
+              Advanced
+            </label>
+          </div>
+
+          <label>Description</label>
+
+          <textarea rows="5"></textarea>
+
+          <div class="button-group">
+            <button type="button">Cancel</button>
+
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

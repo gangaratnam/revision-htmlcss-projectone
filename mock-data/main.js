@@ -131,3 +131,19 @@ const isAuthenticated = localStorage.getItem("isAuthenticated");
 if (isAuthenticated !== "true") {
   window.location.href = "./Login.html";
 }
+const search = document.getElementById("searchIcon");
+
+search.addEventListener("click", () => {
+  courseSearch.value = "";
+  renderCourse("frontend");
+});
+const tableBtn = document.getElementById("tableBtn");
+
+tableBtn.addEventListener("click", () => {
+  window.location.href = "./Table.html";
+});
+const formBtn = document.getElementById("formBtn");
+
+formBtn.addEventListener("click", () => {
+  window.location.href = "./Form.html";
+});

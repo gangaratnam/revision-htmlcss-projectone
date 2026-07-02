@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Courses Table</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="https://googleapis.com" />
+      <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <link rel="stylesheet" href="./table.css" />
+    <link rel="stylesheet" href="./main.css"/>
+  </head>
+
+  <body>
+     <header class="navbar">
+      <img src="./assets/Login.gif" alt="" class="logo" />
+
+      <span id="logout" class="material-symbols-outlined"> logout</span>
+    </header>
+    <main>
+      <div class="table-container">
+        <h2>Learning Roadmap 📚</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Course</th>
+              <th>Level</th>
+              <th>Duration</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Frontend</td>
+              <td>Intermediate</td>
+              <td>6 Months</td>
+              <td>
+                <span class="status active">
+                  Active
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Python</td>
+              <td>Beginner</td>
+              <td>4 Months</td>
+              <td>
+                <span class="status pending">
+                  Pending
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>UI/UX</td>
+              <td>Intermediate</td>
+              <td>3 Months</td>
+              <td>
+                <span class="status completed">
+                  Completed
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
